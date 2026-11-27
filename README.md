@@ -1,7 +1,8 @@
 # cyclistic-bike-share-analysis
 
-**Project Title**
+**Project Title:**
 Cyclistic Bike Share Analysis | Google Data Analytics Capstone Case Study
+
 
 **Project Overview**
 
