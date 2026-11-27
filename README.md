@@ -40,6 +40,7 @@ The objective was to analyze Cyclistic bike-share data and identify behavioral d
 - Python (Pandas)
 - Kaggle
 - Tableau
+- Copilot (AI)
 
 ---
 
