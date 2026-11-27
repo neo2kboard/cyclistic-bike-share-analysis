@@ -4,12 +4,11 @@
 Cyclistic Bike Share Analysis | Google Data Analytics Capstone Case Study
 
 
-**Project Overview**
-
+**Project Overview:**
 This project was completed as part of the Google Data Analytics Professional Certificate Capstone. The objective was to analyze Cyclistic bike-share data and identify differences between annual members and casual riders. Insights were used to develop recommendations for increasing annual membership conversions.
 
-**Business Task**
 
+**Business Task:**
 How do annual members and casual riders use Cyclistic bikes differently, and how can Cyclistic convert more casual riders into annual members?
 
 **Dataset**
