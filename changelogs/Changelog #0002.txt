@@ -1,0 +1,47 @@
+# Changelog 0002 - Data Preparation (Prepare Phase Completion)
+This file contains the notable changes to the project
+
+Version 1.0.1 (11-24-2026)
+## New
+    - Added a worksheet under 202604 to investigate trips crossing midnight between 202604 and 202605 datasets.
+	- Merged identified records from both months to verify whether trips were duplicated or valid cross-month rides.
+	- Investigation paused to prioritize full-dataset validation through SQL/Python tools.
+
+    - Added column 'duplicate_flag' beside ride_id in the 202511 dataset for preliminary duplicate validation.
+	- Initial findings showed duplicate ride_id values may contain different timestamps.
+	- Further validation deferred due to the large dataset size (6.2M+ rows).
+    
+    - Created a BigQuery dataset named 'cyclistic_bikeshare'
+	- Uploaded monthly datasets to BigQuery for initial validation.
+
+    - Created a private Kaggle dataset and notebook environment for data processing and analysis.
+    - Added proper attribution to the original dataset owner
+
+## Changes 
+    - Renamed documentation section from 'Date Issues' to 'Trips Crossing Midnight' to better reflect valid overnight rides.
+    - Expanded dataset documentation to include:
+	- Source information
+	- Update frequency
+	- Licensing details
+	- Dataset coverage period
+	- Total row counts
+
+    - Shifted primary processing environment from BigQuery to Kaggle due to BigQuery billing requirements.
+
+## Fixes
+    - Revalidated monthly row counts after importing datasets into Kaggle.
+    - Verified that all 12 datasets contain the same 13 columns and consistent schema.
+    - Updated total documented row count from 5,937,823 to 6,294,451 after full validation in Kaggle.
+
+## Issues/Next Step
+    - Begin Process Phase
+    - Review dataset structure using:
+	- bike_df.info()
+	- bike_df.columns
+    - Perform missing value assessment:
+	- bike_df.isnull().sum()
+    - Perform duplicate ride_id assessment:
+	- bike_df["ride_id"].duplicated().sum()
+    - Document all identified data quality issues before performing any cleaning or row removal.
+
+

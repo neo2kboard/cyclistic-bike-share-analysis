@@ -1,0 +1,28 @@
+Changelog 0006 - Data Analysis
+This file contains the notable changes to the project.
+
+Version 1.4.0 (11-25-2026)
+
+
+## New
+    - Conducted descriptive analysis on the cleaned dataset.
+    - Analyzed ride counts by rider type.
+    - Analyzed average ride length by rider type.
+    - Analyzed ride counts by day of week.
+    - Analyzed average ride length by day of week.
+    - Analyzed ride counts by month.
+    - Analyzed bike type preferences by rider type.
+    - Analyzed hourly riding patterns by rider type.
+
+## Changes
+    - Generated initial insights regarding behavioral differences between annual members and casual riders.
+
+## Fixes
+    - Confirmed analysis results using the final cleaned dataset containing 6,288,920 records.
+
+## Issues/Next Steps
+   - Create visualizations for key findings.
+   - Identify trends and patterns across rider types.
+   - Summarize business insights.
+   - Develop recommendations for converting casual riders into annual members.
+   - Prepare final report and presentation materials.

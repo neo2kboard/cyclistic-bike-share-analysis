@@ -1,0 +1,34 @@
+Changelog 0007 - Data Viz and Recommendation
+This file contains the notable changes to the project.
+
+Version 1.5.0 (11-27-2026)
+
+
+## New
+    - Published Tableau dashboard for the Cyclistic Bike Share Analysis case study.
+    - Developed KPI cards for:
+	- Total Rides
+	- Average Member Ride Length
+	- Average Casual Ride Length
+    
+    - Created visualizations for:
+	- Rider Composition
+	- Ride Count by Day of Week
+	- Monthly Ride Trend
+	- Ride Count by Hour of Day
+
+    - Identified key behavioral differences between annual members and casual riders through dashboard analysis.
+
+## Changes
+    - Organized findings into an interactive dashboard format to improve data storytelling and business communication.
+    - Simplified dashboard design to focus on insights most relevant to the business objective.
+
+## Fixes
+    - Refined chart layouts, spacing, and visual hierarchy to improve readability.
+    - Standardized visual formatting and color consistency across dashboard components.
+
+## Issues/Next Steps
+   - Finalize case study documentation.
+   - Review findings and recommendations.
+   - Prepare final project portfolio submission.
+   - Publish project assets and supporting documentation.

@@ -1,0 +1,28 @@
+Changelog 0005 - Final Validation
+This file contains the notable changes to the project.
+
+Version 1.3.2 (11-24-2026)
+
+
+## New
+    - Performed final validation of cleaned dataset.
+    - Verified row counts after all cleaning operations.
+    - Verified duplicate ride_id values have been removed.
+    - Verified no negative ride durations remain.
+    - Verified no ride durations greater than 24 hours remain.
+    - Verified no missing values remain in end_lat and end_lng.
+    - Generated cleaned dataset export for analysis phase.
+
+## Changes
+    - Final cleaned dataset prepared for exploratory data analysis (EDA).
+
+## Fixes
+    - Confirmed all cleaning actions were successfully applied.
+    - Confirmed derived columns were successfully created and populated.
+
+## Issues/Next Steps
+   - Load cleaned dataset for analysis.
+   - Perform exploratory data analysis (EDA).
+   - Compare member and casual rider behavior.
+   - Create visualizations and identify trends.
+   - Develop business recommendations based on findings.

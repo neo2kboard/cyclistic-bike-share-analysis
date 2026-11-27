@@ -1,0 +1,23 @@
+# Changelog 0001 - Data Preparation
+This file contains the notable changes to the project
+
+Version 1.0.0 (11-23-2026)
+## New
+    - Added columns (start_date, end_date) to extract date from start_at/end_at columns.
+	- Used filter to check if right dates covered that file.
+	- Used formulas to extract dates on start and end.
+	  start_date: =DATE(YEAR(C2),MONTH(C2),DAY(C2))
+	  end_date: =DATE(YEAR(E2),MONTH(E2),DAY(E2))
+	- Added table about filename, number of rows, columns, and date issues in the documentation 
+	  (Capstone: Bike Sharing Analysis).
+    - Added folder named 'bikeshare_trip_data' and subfolders (raw, modified-for data integrity in dates)
+
+## Changes 
+    - N/A
+
+## Fixes
+    - Fixed wrong file naming issue (from 202501 to 202601) by confirming start/end dates.
+
+## Issues/Next Step
+    - Same number of date issues in both Apr 2026 and May 2026: have suspected that both issues are same/duplicate; compare the contents of both if duplicate. 
+    - Validate and recheck again.

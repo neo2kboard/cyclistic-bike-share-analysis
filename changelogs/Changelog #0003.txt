@@ -1,0 +1,32 @@
+# Changelog 0003 - Initial Data Cleaning
+This file contains the notable changes to the project
+
+Version 1.3.0 (11-24-2026)
+## New
+    - Created Kaggle notebook and imported all 12 monthly datasets.
+    - Merged all monthly datasets into a single DataFrame for processing.
+    - Performed initial dataset validation:
+	- Checked columns and data types.
+	- Checked missing values.
+	- Checked duplicate ride_id values.
+    - Investigated duplicate ride_id records.
+    - Extracted and reviewed all duplicate records.
+    - Confirmed duplicates matched the suspected records identified during the earlier April-May midnight-crossing investigation.
+
+## Changes 
+    - N/A
+
+## Fixes
+    - Confirmed that the 35 duplicate ride_id values were true duplicate records and not unique trips.
+    - Confirmed duplicates originated from source datasets rather than the dataset merge process
+
+## Issues/Next Step
+    - Remove confirmed duplicate records.
+    - Convert started_at and ended_at columns to datetime format.
+    - Create ride_length column.
+    - Create additional date-related fields for analysis.
+    - Review missing-value records and determine appropriate handling strategy before cleaning.
+
+
+
+

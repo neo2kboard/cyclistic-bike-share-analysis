@@ -1,0 +1,36 @@
+# Changelog 0004 - Final Data Cleaning
+This file contains the notable changes to the project
+
+Version 1.3.1 (11-24-2026)
+## New
+    - Converted started_at and ended_at columns from object data type to datetime format.
+    - Created derived columns for analysis:
+	- ride_length
+	- date
+	- month
+	- day_of_week
+	- hour
+    - Conducted ride length validation and investigation.
+    - Conducted missing value assessment after data cleaning.
+
+## Changes 
+    - Updated dataset row count after cleaning operations.
+    - Refined dataset for analysis by removing invalid and anomalous ride-duration records.
+
+## Fixes
+    - Removed 35 confirmed duplicate ride records.
+    - Removed 29 records with negative ride durations.
+    - Removed 5,148 records with ride durations greater than 24 hours.
+    - Removed 319 records with missing end_lat and end_lng values.
+    - Retained records with missing station names and station IDs after determining that removal would result in significant data loss and would not impact the primary business objective.
+
+## Issues/Next Step
+    - Perform final validation of cleaned dataset.
+    - Generate summary statistics for member and casual riders.
+    - Begin exploratory data analysis (EDA).
+    - Create visualizations to identify usage patterns between member and casual riders.
+    - Document findings and insights for the Analyze phase.
+
+
+
+
