@@ -69,7 +69,7 @@ The following data preparation steps were performed:
 
 ### Dashboard Preview
 
-![Cyclistic Dashboard](dashboard/dashboard.png)
+<img width="1249" height="999" alt="bikeshare_analysis_dashboard" src="https://github.com/user-attachments/assets/fac4ff49-b55c-434e-9f6f-12a79e8fab7b" />
 
 ### Interactive Dashboard
 
@@ -138,10 +138,3 @@ Members primarily use Cyclistic as a transportation solution, while casual rider
 To increase membership conversions, Cyclistic should focus on active casual riders through seasonal promotions, weekend campaigns, and messaging that emphasizes convenience and long-term value.
 
 ---
-
-## Additional Resources
-
-- Full Project Report: `documentation/Cyclistic_Bike_Share_Report.pdf`
-- Kaggle Notebook: `notebook/cyclisticoject
-- Changelog: `changelogs/`
-- Tableau Profile: [Tableau Public Link](https://public.tableau.com/app/profile/christian.olandria/)
