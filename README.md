@@ -1,144 +1,147 @@
-# cyclistic-bike-share-analysis
+# Cyclistic Bike Share Analysis
+### Google Data Analytics Capstone Case Study
 
-**Project Title:**
-Cyclistic Bike Share Analysis | Google Data Analytics Capstone Case Study
+## Project Overview
 
+This project was completed as part of the Google Data Analytics Professional Certificate Capstone.
 
+The objective was to analyze Cyclistic bike-share data and identify behavioral differences between annual members and casual riders. Insights from the analysis were used to develop data-driven recommendations for increasing annual membership conversions.
 
-**Project Overview:**
-This project was completed as part of the Google Data Analytics Professional Certificate Capstone. The objective was to analyze Cyclistic bike-share data and identify differences between annual members and casual riders. Insights were used to develop recommendations for increasing annual membership conversions.
+---
 
+## Business Task
 
+**How do annual members and casual riders use Cyclistic bikes differently, and how can Cyclistic convert more casual riders into annual members?**
 
-**Business Task:**
-How do annual members and casual riders use Cyclistic bikes differently, and how can Cyclistic convert more casual riders into annual members?
+---
 
+## Dataset
 
-**Dataset**
+### Source
+- Divvy Trip Data
+- Lyft Bikes and Scooters LLC
+- Public Dataset: https://divvy-tripdata.s3.amazonaws.com/index.html
 
+### Time Period
+**November 2025 – October 2026**
 
+### Dataset Size
 
-**Source**
+| Dataset | Rows |
+|----------|----------:|
+| Raw Dataset | 6,294,451 |
+| Cleaned Dataset | 6,288,920 |
 
+---
 
-Divvy Trip Data
+## Tools Used
 
+- Microsoft Excel
+- Python (Pandas)
+- Kaggle
+- Tableau
 
-Lyft Bikes and Scooters LLC
+---
 
+## Data Cleaning Summary
 
-Public dataset: https://divvy-tripdata.s3.amazonaws.com/index.html
+The following data preparation steps were performed:
 
+- Merged 12 monthly datasets into a single dataset
+- Converted datetime fields
+- Created derived features:
+  - `ride_length`
+  - `date`
+  - `month`
+  - `day_of_week`
+  - `hour`
+- Removed 35 duplicate records
+- Removed 29 negative ride durations
+- Removed 5,148 ride records exceeding 24 hours
+- Removed 319 records with missing geographic coordinates
+- Retained station-related null values to avoid significant data loss
 
+**Final cleaned dataset:** 6,288,920 rides
 
-**Period**
+---
 
-November 2025 – October 2026
+## Tableau Dashboard
 
-**Dataset Size**
+### Dashboard Preview
 
-Raw dataset: 6,294,451 rows
+![Cyclistic Dashboard](dashboard/dashboard.png)
 
-Cleaned dataset: 6,288,920 rows
+### Interactive Dashboard
 
-**Tools Used**
+Tableau Public:
+https://public.tableau.com/views/CyclisticRideSharingExecutiveDashboard/ExecutiveOverview
 
-Excel
+---
 
-Python (Pandas)
+## Key Findings
 
-Kaggle
+### 1. Members Account for Most Usage
 
-Tableau
+- Members: **64.46%**
+- Casual Riders: **35.54%**
 
-**Data Cleaning**
+### 2. Casual Riders Take Longer Trips
 
-Merged 12 monthly datasets.
+| Rider Type | Average Ride Length |
+|------------|--------------------:|
+| Casual | 17.40 min |
+| Member | 11.87 min |
 
-Converted datetime fields.
+### 3. Members Display Commuting Behavior
 
-Created ride_length, date, month, day_of_week, and hour features.
+- Highest activity: Tuesday–Thursday
+- Peak usage: Approximately 8 AM and 5 PM
 
-Removed 35 duplicate records.
+### 4. Casual Riders Display Recreational Behavior
 
-Removed 29 negative ride durations.
+- Highest activity: Saturday and Sunday
+- Longer average ride durations
 
-Removed 5,148 ride records exceeding 24 hours.
+### 5. Ridership Is Seasonal
 
-Removed 319 records with missing geographic coordinates.
+- Highest activity: July–August
+- Lowest activity: Winter months
 
-Retained station-related null values to avoid significant data loss.
+---
 
-**Dashboard**
-<img width="1249" height="999" alt="bikeshare_analysis_dashboard" src="https://github.com/user-attachments/assets/c6c8c56c-8202-4b87-bbdc-33399a6285d3" />
-Tableau Dashboard Link: https://public.tableau.com:9443/views/CyclisticRideSharingExecutiveDashboard/ExecutiveOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link 
+## Recommendations
 
-**Key Findings**
+### 1. Target Weekend Casual Riders
 
-**Finding 1**
+Offer:
+- Membership trials
+- Weekend upgrade promotions
+- First-month membership discounts
 
-Members account for most usage.
+### 2. Launch Summer Membership Campaigns
 
-Members: 64.46%
+Focus marketing efforts during peak riding months when casual ridership is highest.
 
-Casual: 35.54%
+### 3. Promote Convenience and Cost Savings
 
+Highlight:
+- Daily transportation benefits
+- Convenience
+- Long-term savings associated with annual memberships
 
-**Finding 2**
+---
 
-Casual riders take longer trips.
+## Conclusion
 
-Casual: 17.40 min
+Members primarily use Cyclistic as a transportation solution, while casual riders are more likely to use the service for leisure and recreation.
 
-Member: 11.87 min
+To increase membership conversions, Cyclistic should focus on active casual riders through seasonal promotions, weekend campaigns, and messaging that emphasizes convenience and long-term value.
 
+---
 
-**Finding 3**
+## Additional Resources
 
-Members show weekday commuting patterns.
-
-Highest activity Tuesday–Thursday
-
-Peaks around 8 AM and 5 PM
-
-
-**Finding 4**
-
-Casual riders show recreational patterns.
-
-Highest activity on weekends
-
-Longer ride durations
-
-
-**Finding 5**
-
-Ridership is seasonal.
-
-Highest activity during July–August
-
-Lowest activity during winter months
-
-
-**Conclusion**
-
-Members primarily use Cyclistic for routine transportation, while casual riders use the service more for leisure and recreation. Marketing initiatives should focus on converting active casual riders through seasonal promotions, weekend campaigns, and messaging that emphasizes convenience and long-term value.
-
-
-**Recommendations**
-
-
-**Target Weekend Casual Riders**
-
-Offer membership trials and weekend upgrade promotions.
-
-
-**Launch Summer Campaigns**
-
-Focus marketing efforts during peak season when casual ridership is highest.
-
-
-**Promote Convenience and Savings**
-
-Highlight the transportation benefits of annual memberships for frequent riders.
-
+- Full Project Report: `documentation/Cyclistic_Bike_Share_Report.pdf`
+- Kaggle Notebook: `notebook/cyclisticoject
+- Changelog: `changelogs/`
+- Tableau Profile: [Tableau Public Link](https://public.tableau.com/app/profile/christian.olandria/)
